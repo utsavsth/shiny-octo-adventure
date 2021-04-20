@@ -1,0 +1,52 @@
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" href="jquery.mobile-1.1.1.css"/>
+<script src="jquery-1.7.1.js" ></script>
+<script src="jquery.mobile-1.1.1.js"></script>
+<script src="client.js" ></script>
+
+
+</head>
+<body class="body">
+<div data-role="page" id = "mainPage">
+  
+  <div data-role="header" data-position="fixed">
+    <h1>Client</h1>
+  </div>
+  
+  <div data-role="main" class="ui-content">
+   <div>
+    <h1>Routes</h1>
+   </div>
+   <div class="ui-grid-c"><!-- grid -->
+   <div class="ui-block-c">
+		<button id ="post" data-inline="true" >Post to Server</button>
+		</div> 
+    <div class="ui-block-c">
+      <button id ="display" data-inline="true" >Display Server Data Server</button>
+    </div> 
+   </div>
+
+   <div class="ui-grid-c"><!-- grid -->
+  	<div class="ui-block-c">
+		<input type="text"  name="name" id="name" placeholder="Name" value ="Harry">
+    </div>
+	<div class="ui-block-c">
+	   <input type="text"  name="age" id="age" placeholder="Age" value="22">
+    </div>
+    </div>
+
+  </div><!-- main -->
+  <div>
+  <ul data-role="listview" id="responses"></ul>
+</div>
+
+
+
+</div><!-- page -->
+ 
+</body>
+</html>
+
